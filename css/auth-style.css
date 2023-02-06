@@ -1,0 +1,524 @@
+:root {
+    --max-width : 1440px;
+    --color-primary : #6A4029;
+    --color-primary-hover : hsl(21, 44%, 34%);
+    --color-secondary : #FFBA33;
+    --color-secondary-hover : hsl(40, 100%, 70%);
+    --color-accents : #F8F8F8;
+    --color-accents-hover : hsl(0, 0%, 95%);
+    --color-relaxed : #4F5665;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.display-max {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    width: 100%;
+    box-shadow: 0 0 100px black;
+    position: relative;
+}
+
+.logo {
+    width: 30px;
+    height:33px;
+    margin-right: 10px;
+}
+.hero, .brand, a, .reclame, .container, .social-media, .about, .banner {
+    display: flex;
+}
+
+.button:hover {
+    /* border: 1px solid var(--color-primary); */
+    background-color: var(--color-secondary-hover);
+}
+.button {
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: transparent;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+}
+
+
+input {
+    border-radius: 1rem;
+    border: 1px solid;
+    height: 60px;
+    padding: 1rem;
+}
+
+.content {
+    margin: 40px;
+    width: 100%;
+}
+.hero > img {
+    width: 48%;
+}
+
+.brand {
+    align-items: center;
+}
+.sign-up {
+    margin: auto;
+    margin-left: auto;
+    margin-right: 40px;
+    border-radius: 2rem;
+    height: 3rem;
+    padding: 0 50px;
+    font-size: 1rem;
+}
+h2 {
+    color: var(--color-primary);
+    font-weight: 900;
+    margin: auto;
+    margin-bottom: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 10vw 40px 100px;
+}
+input, form a {
+    margin-bottom: 2rem;
+}
+label {
+    margin-bottom: 1rem;
+}
+form img {
+    width: 1.5rem;
+    margin-right: 10px;
+}
+.forgot {
+    width: fit-content;
+}
+a {
+    color: var(--color-primary);
+}
+.btn-shadow  {
+    box-shadow: 1px 2px 6px var(--color-secondary);
+}
+.login-google {
+    color: black;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px rgba(196, 196, 196, 0.67);
+}
+.login-google:hover {
+    background-color: var(--color-accents-hover);
+}
+
+/* .space {
+    position: relative;
+} */
+.reclame {
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    padding: 0 60px;
+    border-radius: 1rem;
+    margin: -100px 10% 0;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px rgba(196, 196, 196, 0.67);
+}
+
+.reclame .description {
+    margin-right: auto;
+    width: 40%;
+}
+
+.reclame h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.reclame p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-relaxed);
+}
+
+.reclame .button {
+    padding: 0 80px;
+    align-self: center;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: var(--color-accents);
+    padding: 160px 10% 0;
+}
+footer .tagline {
+    width: 30%;
+    margin-right: auto;
+}
+
+.tagline p {
+    font-size: 1rem;
+    line-height: 30px;
+    margin: 20px 0;
+    color: var(--color-relaxed);
+}
+.media {
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    margin-right: 20px;
+    /* background-color: var(--color-primary); */
+}
+.media > img {
+    width: 33px;
+}
+footer .row {
+    margin-left: 120px;
+}
+h4 {
+    margin: auto;
+    margin-bottom: 20px;
+}
+ul {
+    font-size: 1rem;
+    font-weight: 200;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 1rem;
+    color: var(--color-relaxed);
+}
+
+footer > p {
+    color: #AFB5C0;
+    padding-bottom: 100px;
+}
+
+/* Forgot Password Page */
+.banner {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.banner > img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+.banner h1 {
+    font-size: 4rem;
+}
+.banner p {
+    margin-bottom: 50px;
+}
+.banner > div {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 12vw 0 0;
+}
+
+.banner form {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.banner input {
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    margin-right: 50px;
+    border: transparent;
+}
+.banner .button {
+    height: 80px;
+    padding: 0 80px;
+}
+.resend {
+    width: 300px;
+    color: #ffffff;
+    margin: auto;
+    background-color: var(--color-primary);
+    box-shadow: 1px 2px 6px var(--color-primary);
+    margin-bottom: 20px;
+}
+.resend:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* nav ul, .auth {
+    display: flex;
+} */
+
+.banner-home {
+    height: 700px;
+}
+.banner-home > .container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+.banner-home p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 2rem;
+}
+.banner .button {
+    padding: 0 50px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    input {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+    }
+    .hero {
+        flex-direction: column;
+        width: 100%;
+        /* height: 100vh; */
+        align-items: center;
+        color: #ffffff;
+    }
+    .hero > img {
+        position: absolute;
+        width: 100%;
+    }
+    .hero > .content {
+        z-index: 1;
+        height: 850px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .hero .brand {
+        margin: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--color-primary);
+    }
+    .brand > img {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero form {
+        margin: 10px 10% 155px;
+    }
+    .hero h2 {
+        color: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .forgot {
+        color: #ffffff;
+    }
+
+    .reclame {
+        z-index: 2;
+        flex-direction: column;
+        height: 260px;
+        margin-top: -130px;
+        padding: 40px;
+        gap: 20px;
+    }
+    .reclame > .description {
+        width: 80%;
+        margin-top: -10px;
+    }
+    .reclame h3 {
+        margin-bottom: 0px;
+    }
+    .reclame .action {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+        z-index: 1;
+        padding: 160px 20px 0px;
+    }
+    footer .tagline {
+        width: 50%;
+    }
+    footer .brand {
+        margin: 0px;
+    }
+    footer .tagline img {
+        display: block;
+        margin-right: 0px;
+    }
+    footer h1 {
+        font-size: 2rem;
+    }
+    footer .about {
+        margin-left: auto;
+    }
+    footer .row {
+        margin-left: 60px;
+        text-align: right;
+    }
+    footer p {
+        padding-bottom: 50px;
+    }
+
+    /* FORGOT-PASSWORD PAGE */
+    .banner {
+        height: 100vh;
+    }
+    .banner div {
+        margin-top: 70px;
+    }
+    .banner h1 {
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    * {
+        /* margin: 0px;
+        padding: 0px; */
+        font-size: 1rem;
+    }
+    input {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        font-size: 0.8rem;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .hero {
+        flex-direction: column;
+        width: 100%;
+        /* height: 100vh; */
+        align-items: center;
+        color: #ffffff;
+    }
+    .hero > img {
+        position: absolute;
+        width: 100%;
+    }
+    .hero > .content {
+        z-index: 1;
+        height: 700px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .hero .brand {
+        margin: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--color-primary);
+    }
+    .brand > img {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero form {
+        margin: 10px 10% 155px;
+    }
+    .hero h2 {
+        color: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+    .forgot {
+        color: #ffffff;
+    }
+
+    .reclame {
+        height: 170px;
+        margin-top: -130px;
+        padding: 20px;
+        gap: 1rem;
+    }
+    .reclame > .description {
+        width: 80%;
+        margin-top: -10px;
+    }
+    .reclame h3 {
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+    }
+    .reclame p {
+        font-size: 0.6rem;
+    }
+    .reclame .action {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 20px 0px;
+    }
+    footer .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .tagline {
+        width: 100%;
+    }
+    footer .tagline img {
+        display: block;
+        margin-right: 0px;
+    }
+    footer h1 {
+        font-size: 2rem;
+    }
+    footer .row {
+        text-align: right;
+    }
+    footer p {
+        padding-bottom: 50px;
+    }
+    
+    /* SIGN UP PAGE */
+    .hero-signup input {
+        margin-bottom: 20px;
+    }
+    .hero-signup label {
+        margin-bottom: 10px;
+    }
+    /* FORGOT-PASSWORD PAGE */
+    .banner {
+        height: 100vh;
+    }
+    .banner div {
+        margin-top: 70px;
+    }
+    .banner .input {
+        display: block;
+    }
+    .banner h1 {
+        font-size: 2.5rem;
+        width: 80%;
+        margin: auto;
+    }
+}

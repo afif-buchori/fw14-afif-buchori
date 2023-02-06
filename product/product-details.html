@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <!-- My Style -->
+  <link rel="stylesheet" href="../css/my-style.css">
+  <!-- Style for phone (max 768px) -->
+  <link rel="stylesheet" href="../css/my-style-for-phone.css">
+
+  <title>Product Details</title>
+</head>
+<body>
+  <div class="display-max">
+
+    <nav class="nav">
+      <div class="container">
+        <div class="brand">
+          <img src="../img/icon/logo.png" alt="logo" class="logo">
+          <h1>Coffee Shop</h1>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="../" class="nav-link">Home</a></li>
+            <li><a href="../product/" class="nav-link active">Product</a></li>
+            <li><a href="#" class="nav-link">Your Cart</a></li>
+            <li><a href="#" class="nav-link">History</a></li>
+          </ul>
+        </div>
+        <div class="account">
+          <ul>
+            <li>
+              <div class="search">
+                <label for="search">
+                  <button><img src="../img/icon/search.svg" alt="search"></button>
+                </label>
+                <input type="text" id="search" placeholder="Search">
+              </div>
+            <li>
+              <a href="#" class="chat">
+                <img src="../img/icon/chat.svg" alt="chat">
+                <div>1</div>
+              </a>
+            </li>
+            <li><a href="../profile/"><img src="../img/user.png" alt="user" class="user"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="content content-product-details">
+      <div class="container">
+        <ul class="page-part">
+          <li>Favorite & Promo</li>
+          <li class="active">Cold Brew</li>
+        </ul>
+        <div class="products">
+          <div class="product">
+            <div class="product-image mb-3">
+              <img src="../img/product/cold-brew.png" alt="display-product" class="product-img">
+            </div>
+            <h1>Cold Brew</h1>
+            <p>IDR 30.000</p>
+            <a href="" class="button btn-choco">Add to Cart</a>
+            <a href="" class="button btn-yellow">Ask a Staff</a>
+          </div>
+          <div class="details">
+            <div class="detail">
+              <p class="mb-3">Delivery only on <span>Monday to Friday</span> at <span>1 - 7 pm</span></p>
+              <p class="mb-3">Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead of heat to extract the flavor. It is brewed in small batches and steeted for as long 48 hours.</p>
+              <h3>Choose a size</h3>
+              <div class="choose-size">
+                <label for="r">
+                  <input type="radio" name="size" id="r">
+                  R
+                  <span></span>
+                </label>
+                <label for="l">
+                  <input type="radio" name="size" id="l">
+                  L
+                  <span></span>
+                </label>
+                <label for="xl">
+                  <input type="radio" name="size" id="xl">
+                  XL
+                  <span></span>
+                </label>
+              </div>
+            </div>
+            <h4>Choose Delivery Methods</h4>
+            <div class="delivery">
+              <label for="dine">
+                <input type="radio" name="delivery-method" id="dine">
+                <span></span>
+                <h5>Dine in</h5>
+              </label>
+              <label for="door">
+                <input type="radio" name="delivery-method" id="door">
+                <span></span>
+                <h5>Door Delivery</h5>
+              </label>
+              <label for="pick">
+                <input type="radio" name="delivery-method" id="pick">
+                <span></span>
+                <h5>Pick up</h5>
+              </label>
+            </div>
+            <div class="set-time">
+              <label for="time">Set time :</label>
+              <input type="text" id="time" placeholder="Enter the time you'll arrived">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reclame reclame-orders">
+      <div class="container-order">
+        <div class="order">
+          <div class="order-image">
+            <img src="../img/product/cold-brew.png" alt="product" class="product-img">
+          </div>
+          <div class="order-list">
+            <h1>Cold Brew</h1>
+            <p>x1 (Large)</p>
+            <p>x1 (Regular)</p>
+          </div>
+          <div class="quantity">
+            <button class="qty">-</button>
+            <h2>2</h2>
+            <button class="qty">+</button>
+          </div>
+        </div>
+        <a href="http://" class="button btn-yellow">CHECKOUT</a>
+      </div>
+    </section>
+  
+    <footer>
+      <div class="foot">
+        <div class="tagline">
+          <div class="brand">
+            <img src="../img/icon/logo.png" alt="" class="logo">
+            <h1>Coffee Shop</h1>
+          </div>
+          <p>Coffee Shop is a strore that sells some good meals, and especially coffee. We provide high quality beans</p>
+          <div class="social-media">
+            <a href="" class="button media"><i class="fa fa-facebook"></i></a>
+            <a href="" class="button media"><i class="fa fa-twitter"></i></a>
+            <a href="" class="button media"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="about">
+          <div class="row">
+            <h4>Product</h4>
+            <ul>
+              <li>Download</li>
+              <li>Pricing</li>
+              <li>Locations</li>
+              <li>Countries</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="row">
+            <h4>Engage</h4>
+            <ul>
+              <li>Coffe Shop ?</li>
+              <li>FAQ</li>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p>&copy;2020CoffeeStore</p>
+    </footer>
+
+  </div>
+</body>
+</html>
