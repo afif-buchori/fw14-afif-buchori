@@ -903,11 +903,19 @@ input[type=radio] {
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: center;
     background-color: #f8f8f880;
 }
+.scroll-x {
+    width: 100%;
+    overflow: scroll;
+}
+.scroll-x::-webkit-scrollbar {
+    display: none;
+}
 .commentary {
+    width: 150%;
     display: flex;
     gap: 50px;
     align-self: flex-start;
