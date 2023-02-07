@@ -38,6 +38,34 @@ a {
     box-shadow: 0 0 100px black;
     position: relative;
 }
+.background-display {
+    position: absolute;
+    z-index: -99;
+    width: 50%;
+    overflow: hidden;
+    filter: blur(20px);
+}
+.background-display img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translate(0px, -370px);
+}
+.bg-left {
+    top: 100px;
+    left: 0;
+}
+.bg-right {
+    top: 100px;
+    right: 0;
+}
+.bg-display-home {
+    height: 645px;
+}
+.bg-display-profile {
+    height: 1085px;
+}
+
 .button {
     display: flex;
     text-decoration: none;
@@ -768,6 +796,7 @@ input[type=radio] {
     display: flex;
     width: 100%;
     justify-content: center;
+    background-color: #ffffff;
 }
 .work > .container {
     margin: 150px 0 80px;
@@ -903,7 +932,7 @@ input[type=radio] {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     align-items: center;
     background-color: #f8f8f880;
 }
@@ -915,11 +944,11 @@ input[type=radio] {
     display: none;
 }
 .commentary {
-    width: 150%;
     display: flex;
     gap: 50px;
     align-self: flex-start;
     margin-left: 10%;
+    width: 200%;
 }
 .comment-card {
     width: 400px;
