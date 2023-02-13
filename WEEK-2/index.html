@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="week-dua.css">
+  <title>WEEK 2</title>
+</head>
+<body>
+  <nav>
+    <h1>Tugas Week 2 - Javascript Dasar</h1>
+  </nav>
+
+  <main>
+    <div class="side-bar">
+      <ol>
+        <li id="no-satu">Algoritma dan Flowchart</li>
+        <li id="no-dua">Object dan Array of Object</li>
+        <li id="no-tiga">Hitung Rata2 dan Grade</li>
+        <li id="no-empat">Deteksi Palindrome</li>
+        <li id="no-lima">Rubah Konsonan</li>
+      </ol>
+    </div>
+    <div class="content">
+      <section id="jwb-no-satu">
+        <div class="container">
+          <h1>Jawaban Soal No. 1</h1>
+          <p>Membuat algoritma dan Flowchart</p>
+          <div class="control-a mb">
+            <button class="btn" id="satu-a">1-A</button>
+            <button class="btn" id="satu-b">1-B</button>
+          </div>
+          <div class="display">
+            <div class="gambar" id="gambar-a">
+              <img src="./flowchart1a.drawio.svg" alt="">
+            </div>
+            <div class="gambar" id="gambar-b">
+              <img src="./flowchart1b.drawio.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="jwb-no-dua">
+        <div class="container">
+          <h1>Jawaban Soal No. 2</h1>
+          <p>Variabel biodata object dan array of object</p>
+          <button class="btn" id="object-biodata">Tampilkan</button>
+          <div class="input" id="data-object">
+            <ul>
+              <li>Name : <span id="name"></span></li>
+              <li>Age : <span id="age"></span></li>
+              <li>Hobby : <span id="hobby"></span></li>
+              <li>Is Married : <span id="married"></span></li>
+              <li>School List :
+                <ul id="school-list"></ul>
+              </li>
+              <li>Skill :
+                <ul id="skills"></ul>
+              </li>
+              <li>Interest in Coding : <span id="coding"></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    
+      <section id="jwb-no-tiga">
+        <div class="container">
+          <h1>Jawaban Soal No. 3</h1>
+          <p class="mb-3">Program menghitung rata-rata UN beserta gradenya.</p>
+          <form class="input" onsubmit="event.preventDefault();">
+            <label for="bhsindo">Bahasa Indonesia :</label>
+            <input type="text" id="bhsindo" placeholder="Masukkan Nilai">
+            <label for="bhsingg">Bahasa Inggris :</label>
+            <input type="text" id="bhsingg" placeholder="Masukkan Nilai">
+            <label for="mtk">Matematika :</label>
+            <input type="text" id="mtk" placeholder="Masukkan Nilai">
+            <label for="ipa">IPA :</label>
+            <input type="text" id="ipa" placeholder="Masukkan Nilai">
+            <div class="control">
+              <button type="reset" class="btn" id="reset-3">Reset</button>
+              <button type="submit" class="btn" id="rata2-grade">Cetak Hasil</button>
+            </div>
+          </form>
+          <div class="result">
+            <p id="result-ratarata"></p>
+            <h2 id="result-grade"></h2>
+          </div>
+        </div>
+      </section>
+    
+      <section id="jwb-no-empat">
+        <div class="container">
+          <h1>Jawaban Soal No. 4</h1>
+          <p class="mb-3">Program mendeteksi Palindrome.</p>
+          <form class="input" onsubmit="event.preventDefault();">
+            <label for="kata-palindrome">Kata :</label>
+            <input type="text" id="kata-palindrome" placeholder="Masukkan Kata">
+            <div class="control">
+              <button type="reset" class="btn" id="reset-4">Reset</button>
+              <button type="submit" class="btn" id="deteksi-palindrome">Cek Hasil</button>
+            </div>
+          </form>
+          <div class="result">
+            <p id="description-palindrome"></p>
+            <h2 id="result-palindrome"></h2>
+          </div>
+        </div>
+      </section>
+    
+      <section id="jwb-no-lima">
+        <div class="container">
+          <h1>Jawaban Soal No. 5</h1>
+          <p class="mb-3">Program merubah huruf "a" menjadi huruf "o"</p>
+          <form class="input" onsubmit="event.preventDefault();">
+            <label for="kata-konsonan">Kata :</label>
+            <input type="text" id="kata-konsonan" placeholder="Masukkan Kata">
+            <div class="control">
+              <button type="reset" class="btn" id="reset-5">Reset</button>
+              <button type="submit" class="btn" id="rubah-konsonan">Cek Hasil</button>
+            </div>
+          </form>
+          <div class="result">
+            <h2 id="result-konsonan"></h2>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  
+
+  <script src="week-dua.js"></script>
+</body>
+</html>
