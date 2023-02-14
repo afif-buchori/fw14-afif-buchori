@@ -50,6 +50,7 @@ function rataRataGrade(bhsindo,bhsingg,mtk,ipa) {
                 ipa >= 0 && ipa <= 100
                 ) {
                     rataRata = (bhsindo + bhsingg + mtk + ipa) / 4;
+                    resultRataRata.innerHTML = 'Nilai rata-rata adalah ' + rataRata;
                     if(rataRata >= 90) {
                         grade = 'A';
                     }
@@ -65,16 +66,17 @@ function rataRataGrade(bhsindo,bhsingg,mtk,ipa) {
                     else {
                         grade = 'E';
                     }
+            return 'Grade ' + grade;
         }
         else {
             alert('Nilai yang anda masukkan salah !');
+            return '';
         }
     }
     else {
         alert('Semua Nilai Harus Terisi !');
+        return '';
     }
-    resultRataRata.innerHTML = 'Nilai rata-rata adalah ' + rataRata;
-    return 'Grade ' + grade;
 };
 
 // JAWABAN SOAL NO 4
@@ -92,11 +94,12 @@ function deteksiPalindrome(textPalindrome) {
         else {
             result = 'Kata ini bukan Palindrome';
         }
+    return result;
     }
     else {
         alert('kurang dari 2 huruf');
+        return '';
     }
-    return result;
 };
 
 // JAWABAN SOAL NO 5
