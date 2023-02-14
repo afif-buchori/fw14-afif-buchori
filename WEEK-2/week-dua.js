@@ -57,14 +57,14 @@ function rataRataGrade(bhsindo,bhsingg,mtk,ipa) {
                         grade = 'B';
                     }
                     else if(rataRata >= 70) {
-                grade = 'C';
-            }
-            else if(rataRata >= 60) {
-                grade = 'D';
-            }
-            else {
-                grade = 'E';
-            }
+                        grade = 'C';
+                    }
+                    else if(rataRata >= 60) {
+                        grade = 'D';
+                    }
+                    else {
+                        grade = 'E';
+                    }
         }
         else {
             alert('Nilai yang anda masukkan salah !');
@@ -226,11 +226,11 @@ function resetContent() {
     jwbNoTiga.style.display = 'none';
     jwbNoEmpat.style.display = 'none';
     jwbNoLima.style.display = 'none';
-    btnNoSatu.className = '';
-    btnNoDua.className = '';
-    btnNoTiga.className = '';
-    btnNoEmpat.className = '';
-    btnNoLima.className = '';
+    btnNoSatu.classList.remove('active');
+    btnNoDua.classList.remove('active');
+    btnNoTiga.classList.remove('active');
+    btnNoEmpat.classList.remove('active');
+    btnNoLima.classList.remove('active');
 }
 const jwbNoSatu = document.getElementById('jwb-no-satu');
 const jwbNoDua = document.getElementById('jwb-no-dua');
