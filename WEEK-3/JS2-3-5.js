@@ -23,19 +23,23 @@ searchName('an', 3, printNames);
 
 // JAWABAN NO 4 - Function validasi nilaiAwal < nilaiAkhir
 function searchNilai(nilaiAwal, nilaiAkhir, dataArr) {
-    if(dataArr.length < 5) {
-        return 'Jumlah angka dalam Array harus lebih dari 5';
-    }
-    if(nilaiAwal > nilaiAkhir) {
-        return 'Nilai akhir harus lebih besar dari nilai awal'
-    }
-    let result = dataArr.filter(nilai => nilai > nilaiAwal && nilai < nilaiAkhir);
-    result.sort((a, b) => a - b);
-    if(result.length > 0) {
-        return result;
-    }
-    else {
-        return 'Nilai tidak ditemukan';
+    if(typeof nilaiAwal === 'number' && typeof nilaiAkhir === 'number') {
+        if(dataArr.length < 5) {
+            return 'Jumlah angka dalam Array harus lebih dari 5';
+        }
+        if(nilaiAwal > nilaiAkhir) {
+            return 'Nilai akhir harus lebih besar dari nilai awal'
+        }
+        let result = dataArr.filter(nilai => nilai > nilaiAwal && nilai < nilaiAkhir);
+        if(result.length > 0) {
+            result.sort((a, b) => a - b);
+            return result;
+        }
+        else {
+            return 'Nilai tidak ditemukan';
+        }
+    } else {
+        return 'Input harus bertipe number';
     }
 }
 const dataArr = [2, 25, 4, 14, 17, 30, 8];

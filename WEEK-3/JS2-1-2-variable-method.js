@@ -20,17 +20,19 @@
 // JAWABAN SOAL NO 2 - METHOD (built in function) ======================================
 
 // 1. String to Lower Case adalah method untuk mengubah sebuah string menjadi huruf kecil.
-const str = '  HeLLo woRLd  ';
+const str = 'HeLLo woRLd';
 console.log('Nilai awal :', str)
 console.log('LowerCase  :', str.toLowerCase());
 // sifat : non-mutasi
 
-// 2. String Trim adalah method untuk menghapus spasi di awal dan di akhir sebuah string.
-console.log(str.trim());
+// 2. String Char At adalah method untuk mengambil karakter pada indeks tertentu dari sebuah string
+console.log('Char At :', str.charAt(8));
 // sifat : non-mutasi
 
-// 3. String Char At adalah method untuk mengambil karakter pada indeks tertentu dari sebuah string
-console.log('Char At :', str.charAt(10));
+// 3. String Trim adalah method untuk menghapus spasi di awal dan di akhir sebuah string.
+const strT = '     welcome     ';
+console.log(strT);
+console.log(strT.trim());
 // sifat : non-mutasi
 
 // 4. Array Filter adalah method untuk memfilter elemen-elemen dari array berdasarkan kondisi tertentu, dan akan mengembalikan array baru yang hanya memenuhi kondisi tersebut.

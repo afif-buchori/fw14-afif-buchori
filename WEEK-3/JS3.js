@@ -1,6 +1,7 @@
 // JAVASCRIPT 3
 // JAWABAN NO 1
-// Synchronous adalah sebuah perintah yang eksekusinya dijalankan secara berurutan, dimana perintah pertama dijalankan hingga selesai dan setelah itu baru akan menjalankan perintah selanjutnya.
+// Synchronous adalah sebuah perintah yang eksekusinya dijalankan secara berurutan, dimana perintah pertama dijalankan hingga selesai dan setelah itu menjalankan perintah selanjutnya.
+
 // Asynchronous adalah sebuah perintah yang eksekusinyna dijalankan secara pararel, dimana perintah pertama dijalankan dan langsung menjalankan perintah berikutnya meskipun perintah pertama prosesnya belum selesai.
 
 // JAWABAN NO 2
@@ -85,10 +86,14 @@ const getTaskList = (week) => {
             }
         }, 5000);
     })
+};
+getTaskList()
     .then((cek) => console.log(cek))
     .catch((error) => console.log(error.message));
-};
+
 getTaskList(3);
+
+
 // 4-B
 const member = ['muchamad', 'buchori'];
 const addMember = (input) => {
