@@ -37,6 +37,7 @@ a {
     width: 100%;
     box-shadow: 0 0 100px black;
     position: relative;
+    overflow: hidden;
 }
 .background-display {
     position: absolute;
@@ -120,7 +121,9 @@ a {
     display: flex;
     width: 80%;
 }
-
+.toggle, .toggle img {
+    display: none;
+}
 .nav {
     display: flex;
     height: 100px;
@@ -1354,6 +1357,90 @@ input[type=radio] {
 .btn-yellow-shadow:hover {
     box-shadow: none;
 }
+
+/* HISTORY */
+.content-history {
+    padding-bottom: 1.5rem;
+}
+.content-history .container {
+    gap: 0;
+    margin-top: 20px;
+}
+.content-history h1 {
+    align-self: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+.content-history .container > p {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.product-order-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 36px;
+}
+.card-product {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    min-width: 350px;
+    max-width: 400px;
+    padding: 16px;
+    align-items: center;
+    position: relative;
+    transition: 0.2s linear;
+    gap: 20px;
+    cursor: pointer;
+}
+.card-product .image-product {
+    /* border: 1px solid black; */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-product .image-product img {
+    width: 150%;
+    transform: translate(-18px, -40px);
+}
+.card-product p {
+    color: var(--color-primary);
+    font-weight: 400;
+}
+.card-option {
+    display: none;
+    position: absolute;
+    right: -22px;
+    top: -25px;
+    gap: 10px;
+    transition: 0.1s linear;
+}
+.card-option div, .card-option button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.card-option img {
+    width: 40%;
+}
+.card-option button {
+    background-color: var(--color-secondary);
+    border: none;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 
 /* FOOTER STYLE */
 footer {

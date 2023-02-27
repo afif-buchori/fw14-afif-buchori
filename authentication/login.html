@@ -29,14 +29,14 @@
           <h1>Coffee Shop</h1>
           <a href="./signup.html" class="button sign-up">Sign Up</a>
         </div>
-        <form action="">
+        <form action="" onsubmit="event.preventDefault();">
           <h2 class="title">Login</h2>
-          <label for="email">Email Address :</label>
+          <label for="email" class="label-email">Email Address :</label>
           <input type="text" id="email" placeholder="Enter your email address">
-          <label for="password">Password :</label>
+          <label for="password" class="label-pass">Password :</label>
           <input type="password" id="password" placeholder="Enter you password">
           <a href="./forgotpassword.html" class="forgot">Forgot password?</a>
-          <a href="../" class="button btn-shadow">Login</a>
+          <button type="submit" id="submit-login" class="button btn-shadow">Login</button>
           <a href="" class="button login-google">
             <img src="../img/icon/icon-google.svg" alt="icon-google"> Login with Google
           </a>
@@ -60,7 +60,9 @@
       <div class="container">
         <div class="tagline">
           <div class="brand">
-            <img src="../img/icon/logo.svg" alt="" class="logo">
+            <a href="../">
+              <img src="../img/icon/logo.svg" alt="" class="logo">
+            </a>
             <h1>Coffee Shop</h1>
           </div>
           <p>Coffee Shop is a strore that sells some good meals, and especially coffee. We provide high quality beans</p>
@@ -97,6 +99,7 @@
     </footer>
   
   </div>
+  <script src="../week-4/js-login.js"></script>
 </body>
 </html>
 
