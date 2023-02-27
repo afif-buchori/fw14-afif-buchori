@@ -5,7 +5,7 @@ const cardOptions = document.querySelector('.card-option');
 const total = 15;
 
 const content = document.querySelector('.product-order-list');
-for(let x = 0; x < total; x++) {
+for(let x = 1; x <= total; x++) {
     const card = document.createElement('div');
     card.className = 'card-product';
     card.style.display = 'flex';
@@ -53,17 +53,18 @@ for(let x = 0; x < total; x++) {
     card.addEventListener('click', function() {
         options.style.display = 'flex';
         card.style.backgroundColor = '#ffffff80';
-        console.log('card open option');
+        console.log(`card ${x} open option`);
     });
     btnCancel.addEventListener('click', function(event) {
         event.stopPropagation();
         options.style.display = 'none';
         card.style.backgroundColor = '#ffffff';
-        console.log('close');
+        console.log('close',x);
     });
     
     btnDelete.addEventListener('click', function(event) {
         event.stopPropagation();
         content.removeChild(card);
+        console.log('Delete Card',x);
     });
 }
