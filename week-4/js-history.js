@@ -59,12 +59,12 @@ for(let x = 1; x <= total; x++) {
         event.stopPropagation();
         options.style.display = 'none';
         card.style.backgroundColor = '#ffffff';
-        console.log('close',x);
+        console.log('close ' + x);
     });
     
     btnDelete.addEventListener('click', function(event) {
         event.stopPropagation();
         content.removeChild(card);
-        console.log('Delete Card',x);
+        console.log('Delete Card ' + x);
     });
 }

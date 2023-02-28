@@ -69,6 +69,7 @@ btnLogin.addEventListener('click', function() {
         errMessage.innerText = 'Password Kurang...';
     }
     else {
+        errPopup.style.display = 'none';
         console.log('Email :',valueEmail);
         console.log('Password :',valuePass);
     }
