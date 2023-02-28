@@ -6,7 +6,7 @@ let positionNavbar = false;
 btnToggle.addEventListener('click', function() {
     const navbar = document.querySelector('.navbar ul');
     const account = document.querySelector('.nav .account');
-    if(positionNavbar == false) {
+    if(!positionNavbar) {
         navbar.style.right = '0px';
         account.style.right = '0px';
         iconClose.style.display = 'block';
