@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT STYLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/tailwind.css">
+
+  <title>Coffee Shop | Home</title>
+</head>
+<body>
+
+  <!-- HEADER + NAVBAR -->
+  <header class="w-full fixed h-14 md:h-28 flex items-center justify-center shadow-lg bg-white z-50">
+    <nav class="flex w-full md:w-4/5 mx-4 md:mx-0 max-width">
+      <div class="navbrand flex items-center mr-auto gap-4">
+        <img src="./img/icon/logo.svg" alt="logo-brand" class="w-8">
+        <h1 class="text-2xl font-bold">Coffee Shop</h1>
+      </div>
+      <div class="navbar hidden md:flex items-center gap-10">
+        <a href="#" class="navlink nav-active">Home</a>
+        <a href="#" class="navlink">Product</a>
+        <a href="#" class="navlink">Your Cart</a>
+        <a href="#" class="navlink">History</a>
+      </div>
+      <div class="account hidden md:flex items-center gap-10 ml-auto">
+        <a href="#" class="btn font-medium">Login</a>
+        <a href="#" class="btn font-medium w-36 h-11 flex items-center justify-center rounded-3xl bg-primary drop-shadow-lg">Sign Up</a>
+      </div>
+      <div class="flex">
+        <img src="./img/icon/toggle-menu.svg" alt="" class="w-10 md:hidden">
+        <img src="./img/icon/close.svg" alt="" class="hidden w-10">
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO / JUMBOTRON -->
+  <section class="hero mt-14 md:mt-28 w-full h-auto flex justify-center ">
+    <div class="w-4/5 max-width">
+      <form action="" class="h-16 w-auto max-w-xs ml-auto px-8 gap-4 my-5 flex items-center bg-white rounded-[60px]">
+        <img src="./img/icon/search.svg" alt="icon-search" class="w-5">
+        <input type="text" placeholder="Search" class="input-line h-3/4 w-full">
+      </form>
+      <h1 class="font-bold text-3xl md:text-5xl leading-8 md:leading-[70px] max-w-xl text-white mb-3 md:mb-4">Start Your Day with Coffee and Good Meals</h1>
+      <p class="font-medium md:font-bold text-base md:text-xl leading-7 max-w-xl text-white mb-7 md:mb-8">We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!</p>
+      <a href="#" class="btn w-full md:w-60 h-14 rounded-2xl bg-primary text-secondary mb-28 md:mb-56">Get Started</a>
+    </div>
+  </section>
+
+  <!-- RECLAME -->
+  <section class="mt-[-64px] md:mt-[-100px] w-4/5 h-32 md:h-[200px] p-4 md:p-8 flex justify-evenly items-center rounded-xl bg-white shadow-xl max-width">
+    <div class="flex flex-col md:flex-row justify-center items-center sm:justify-evenly xl:justify-center xl:gap-9 w-full h-full">
+      <!-- STAFF RECLAME -->
+      <div class="flex w-10 h-10 md:w-14 md:h-14 items-center justify-center rounded-full bg-primary">
+        <img src="./img/icon/person.svg" alt="icon" class="w-2/4">
+      </div>
+      <div class="flex flex-col items-center">
+        <h2 class="font-bold text-xl md:text-2xl">90+</h2>
+        <p class="text-sm md:text-base text-greydark">Staff</p>
+      </div>
+    </div>
+    <!-- LOCATION RECLAME -->
+    <div class="flex flex-col md:flex-row justify-center items-center sm:justify-evenly xl:justify-center xl:gap-9 w-full h-full border-x-2 border-[#EEEFF2]">
+      <div class="flex w-10 h-10 md:w-14 md:h-14 items-center justify-center rounded-full bg-primary">
+        <img src="./img/icon/location-sharp.svg" alt="icon" class="w-2/4">
+      </div>
+      <div class="flex flex-col items-center">
+        <h2 class="font-bold text-xl md:text-2xl">30+</h2>
+        <p class="text-sm md:text-base text-greydark">Stores</p>
+      </div>
+    </div>
+    <!-- LOVE CUSTOMER RECLAME -->
+    <div class="flex flex-col md:flex-row justify-center items-center sm:justify-evenly xl:justify-center xl:gap-9 w-full h-full">
+      <div class="flex w-10 h-10 md:w-14 md:h-14 items-center justify-center rounded-full bg-primary">
+        <img src="./img/icon/heart-outline.svg" alt="icon" class="w-2/4">
+      </div>
+      <div class="flex flex-col items-center">
+        <h2 class="font-bold text-xl md:text-2xl">800+</h2>
+        <p class="text-sm md:text-base text-greydark">Customers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK CONTENT -->
+  <section class="flex flex-col items-center w-4/5 max-width my-8 md:my-24">
+    <div class="flex flex-col md:flex-row w-full md:gap-[10%]">
+      <img src="./img/team-work.jpeg.webp" alt="" class="md:w-1/2 h-fit">
+      <div class="flex flex-col md:w-1/2 justify-center">
+        <h3 class="font-medium text-2xl md:text-3xl md:text-4xl md:leading-[50px]">We Provide Good Coffee and Healthy Meals</h3>
+        <p class="text-sm md:text-base leading-6 md:leading-7 my-4 md:my-6">You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
+        <ul class="text-xs md:text-sm leading-6 md:leading-8">
+          <li class="flex gap-2 md:gap-4"><img src="./img/icon/checklist.svg" alt=""> High quality beans</li>
+          <li class="flex gap-2 md:gap-4"><img src="./img/icon/checklist.svg" alt=""> Healthy meals, you can request the ingredients</li>
+          <li class="flex gap-2 md:gap-4"><img src="./img/icon/checklist.svg" alt=""> Chat with our staff to get better experience for ordering</li>
+          <li class="flex gap-2 md:gap-4"><img src="./img/icon/checklist.svg" alt=""> Free member card with a minimum purchase of IDR 200.000.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="bg-[#f8f8f885] w-full flex justify-center pt-9">
+    <main class="flex flex-col items-center w-4/5 max-width">
+      <!-- FAVORITE PEOPLE -->
+      <h3 class="font-medium text-2xl md:text-3xl md:text-4xl md:leading-[50px]">Here is People’s Favorite</h3>
+      <p class="text-greydark text-sm md:text-base leading-6 md:leading-7 my-4 md:my-6">Let’s choose and have a bit taste of poeple’s favorite. It might be yours too!</p>
+      <!-- CARD-FAVORITE CONTAINER -->
+      <article class="flex flex-col md:flex-row gap-12 pt-9 md:pt-20 pb-14 md:pb-28 md:justify-center w-full">
+        <!-- CARD-FAV-1 -->
+        <div class="card-fav w-full md:w-80 md:h-[760px] p-3 md:pt-16 md:pb-12 grid grid-cols-2 gap-3 md:flex md:flex-col md:justify-between items-center border-2 border-grey rounded-xl">
+          <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden">
+            <img src="./img/product/hazelnut-latte.png.webp" alt="">
+          </div>
+          <h4 class="font-medium text-lg text-center">Hazelnut Latte</h4>
+          <ul class="card-fav-list text-xs sm:text-sm md:flex flex-col gap-6">
+            <li>HazelnutSyrup</li>
+            <li>Wanilla Whipped Cream</li>
+            <li>Ice / Hot</li>
+            <li>Sliced Banana on Top</li>
+          </ul>
+          <h5 class="font-medium text-lg sm:text-2xl text-center">IDR 25.000</h5>
+          <a href="" class="w-full sm:w-44 h-11 font-bold text-secondary flex justify-center items-center border rounded-3xl border-primary">Order Now</a>
+        </div>
+        <!-- CARD-FAV-2 -->
+        <div class="card-fav w-full md:w-80 md:h-[760px] p-3 md:pt-16 md:pb-12 grid grid-cols-2 gap-3 md:flex md:flex-col md:justify-between items-center border-2 border-grey rounded-xl">
+          <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden">
+            <img src="./img/product/pink-promise.png.webp" alt="">
+          </div>
+          <h4 class="font-medium text-lg text-center">Pink Promise</h4>
+          <ul class="card-fav-list text-xs sm:text-sm md:flex flex-col gap-6">
+            <li>1 Shot of Coffee</li>
+            <li>Vanilla Whipped Cream</li>
+            <li>Chocolate Biscuits</li>
+            <li>Strawberry Syrup</li>
+            <li>Sliced strawberry on Top</li>
+          </ul>
+          <h5 class="font-medium text-lg sm:text-2xl text-center">IDR 30.000</h5>
+          <a href="" class="w-full sm:w-44 h-11 font-bold text-secondary flex justify-center items-center border rounded-3xl border-primary">Order Now</a>
+        </div>
+        <!-- CARD-FAV-3 -->
+        <div class="card-fav w-full md:w-80 md:h-[760px] p-3 md:pt-16 md:pb-12 grid grid-cols-2 gap-3 md:flex md:flex-col md:justify-between items-center border-2 border-grey rounded-xl">
+          <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden">
+            <img src="./img/product/chicken-wings.png.webp" alt="">
+          </div>
+          <h4 class="font-medium text-lg text-center">Chicken Wings</h4>
+          <ul class="card-fav-list text-xs sm:text-sm md:flex flex-col gap-6">
+            <li>Wings</li>
+            <li>Drum Sticks</li>
+            <li>Mayonaise and Lemon</li>
+            <li>Hot Fried</li>
+            <li>Mayonaise and Lemon</li>
+            <li>Buy 1 Get 1 only for Dine in</li>
+          </ul>
+          <h5 class="font-medium text-lg sm:text-2xl text-center">IDR 40.000</h5>
+          <a href="" class="w-full sm:w-44 h-11 font-bold text-secondary flex justify-center items-center border rounded-3xl border-primary">Order Now</a>
+        </div>
+      <!-- [END] CARD-FAV CONTAINER -->
+      </article>
+
+      <!-- STORE LOCATION CONTENT -->
+      <h3 class="font-medium text-2xl md:text-3xl md:text-4xl md:leading-[50px]">Visit Our Store in the Spot on the Map Below</h3>
+      <p class="text-greydark text-sm md:text-base leading-6 md:leading-7 my-4 md:my-6">See our store in every city on the spot and spen your good day there. See you soon!</p>
+      <img src="./img/maps.svg" alt="">
+      <!-- [END] STORE LOCATION CONTENT -->
+
+      <!-- PARTNER CONTENT -->
+      <h3 class="font-medium text-2xl md:text-3xl md:text-4xl md:leading-[50px]">Our Partner</h3>
+      <div class="w-full flex flex-col md:flex-row sm:grid sm:grid-cols-2 md:flex justify-center justify-items-center items-center mb-12">
+        <div class="our-partner-img w-48">
+          <img src="./img/partner/netflix.png.webp" alt="" class="w-full">
+        </div>
+        <div class="our-partner-img w-48">
+          <img src="./img/partner/reddit.png.webp" alt="" class="w-full">
+        </div>
+        <div class="our-partner-img w-48">
+          <img src="./img/partner/amazon.png.webp" alt="" class="w-full">
+        </div>
+        <div class="our-partner-img w-48">
+          <img src="./img/partner/discord.png.webp" alt="" class="w-full">
+        </div>
+        <div class="our-partner-img w-48">
+          <img src="./img/partner/spotify.png.webp" alt="" class="w-full">
+        </div>
+      </div>
+      <!-- [END] PARTNER CONTENT -->
+
+      <!-- COMENTARY CUSTOMER CONTENT -->
+      <h3 class="font-medium text-2xl md:text-3xl md:text-4xl md:leading-[50px]">Loved by Thousands of Happy Customer</h3>
+      <p class="text-greydark text-sm md:text-base leading-6 md:leading-7 my-4 md:my-6">These are the stories of our customers who have visited us with great pleasure.</p>
+      <!-- COMMENTARY CONTAINER -->
+      <div class="w-full flex flex-col md:flex-row gap-3 2xl:gap-14 pb-4 overflow-x-scroll xl:overflow-hidden">
+        <!-- CARD COMMENT-1 -->
+        <div class="card-comment flex flex-col p-4 sm:p-7 w-full sm:min-w-[400px] max-h-[230px] border-2 rounded-xl border-grey">
+          <div class="flex w-full gap-3 mb-6">
+            <div class="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden">
+              <img src="./img/customer/customer-1.png.webp" alt="">
+            </div>
+            <div class="">
+              <h4 class="font-medium md:text-lg">Viezh Robert</h4>
+              <h5 class="text-xs md:text-sm text-grey">Warsaw, Poland</h5>
+            </div>
+            <div class="ml-auto flex gap-2 items-center">
+              <p class="font-medium">4.5</p>
+              <img src="./img/icon/Star.svg" alt="" class="w-4">
+            </div>
+          </div>
+          <p class="text-xs md:text-base">“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like it here!! Very recommended!</p>
+        </div>
+        <!-- CARD COMMENT-2 -->
+        <div class="card-comment flex flex-col p-4 sm:p-7 w-full sm:min-w-[400px] max-h-[230px] border-2 rounded-xl border-grey">
+          <div class="flex w-full gap-3 mb-6">
+            <div class="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden">
+              <img src="./img/customer/customer-2.png.webp" alt="">
+            </div>
+            <div class="">
+              <h4 class="font-medium md:text-lg">Yessica Christy</h4>
+              <h5 class="text-xs md:text-sm text-grey">Shanxi, China</h5>
+            </div>
+            <div class="ml-auto flex gap-2 items-center">
+              <p class="font-medium">4.5</p>
+              <img src="./img/icon/Star.svg" alt="" class="w-4">
+            </div>
+          </div>
+          <p class="text-xs md:text-base">“I like it because I like to travel far and still can make my day better just by drinking their Hazelnut Latte</p>
+        </div>
+        <!-- CARD COMMENT-3 -->
+        <div class="card-comment flex flex-col p-4 sm:p-7 w-full sm:min-w-[400px] max-h-[230px] border-2 rounded-xl border-grey">
+          <div class="flex w-full gap-3 mb-6">
+            <div class="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden">
+              <img src="./img/customer/customer-3.png.webp" alt="">
+            </div>
+            <div class="">
+              <h4 class="font-medium md:text-lg">Kim Young Jou</h4>
+              <h5 class="text-xs md:text-sm text-grey">Seoul, South Korea</h5>
+            </div>
+            <div class="ml-auto flex gap-2 items-center">
+              <p class="font-medium">4.5</p>
+              <img src="./img/icon/Star.svg" alt="" class="w-4">
+            </div>
+          </div>
+          <p class="text-xs md:text-base">“This is very unusual for my taste, I haven’t liked coffee before but their coffee is the best! and yup, you have to order the chicken wings, the best in town!</p>
+        </div>
+      </div>
+      <!-- PAGINATION COMMENTS CUSTOMER -->
+      <div class="w-full flex py-6 mb-32">
+        <div class="flex gap-4 mr-auto items-center">
+          <span class="page-dot page-dot-active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+        <div class="flex gap-4 ml-auto">
+          <span class="page-arrow"></span>
+          <span class="page-arrow"></span>
+        </div>
+      </div>
+      <!-- [END] COMENTARY CUSTOMER CONTENT -->
+
+      <!-- RECLAME CHECK PROMO -->
+      <section class="relative top-[-115px] w-full flex justify-center">
+        <div class="absolute w-full h-32 md:h-56 p-4 md:px-10 flex flex-col md:flex-row justify-between items-center rounded-xl bg-white shadow-xl max-width">
+          <div class="">
+            <h1 class="text-lg md:text-4xl font-medium max-w-sm">Check our promo today!</h1>
+            <p class="text-xs md:text-base mb-3">Let's see the deals and pick yours!</p>
+          </div>
+          <a href="" class="btn w-full md:w-64 h-16 flex justify-center items-center rounded-2xl bg-primary shadow-md shadow-primary font-bold text-secondary">See Promo</a>
+        </div>
+      </section>
+
+    </main>
+  </section>
+  
+  <!-- FOOTER CONTENT -->
+  <footer class="flex flex-col w-full pt-36 pb-10 md:pb-24 items-center bg-backaccent">
+    <div class="flex flex-col md:flex-row  w-4/5 max-width">
+      <div class="flex flex-col">
+        <div class="navbrand flex items-center mr-auto gap-4">
+          <img src="./img/icon/logo.svg" alt="logo-brand" class="w-8">
+          <h1 class="text-2xl font-bold">Coffee Shop</h1>
+        </div>
+        <p class="max-w-sm mr-[8%] font-medium leading-5 md:leading-8 pt-5 pb-6">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+        <div class=" flex gap-[10%] md:gap-6 justify-center md:justify-start">
+          <a href="#" class="btn flex w-9 h-9 rounded-full justify-center items-center bg-primary drop-shadow-lg">F</a>
+          <a href="#" class="btn flex w-9 h-9 rounded-full justify-center items-center bg-primary drop-shadow-lg">T</a>
+          <a href="#" class="btn flex w-9 h-9 rounded-full justify-center items-center bg-primary drop-shadow-lg">I</a>
+        </div>
+      </div>
+      <!-- SIDE FOOTER -->
+      <div class="flex md:gap-28 md:ml-auto justify-between mt-10 md:mt-0">
+        <div class="">
+          <p class="font-medium text-lg mb-7">Product</p>
+          <ul class="flex flex-col gap-1.5 text-greydark leading-8">
+            <li>Download</li>
+            <li>Pricing</li>
+            <li>Location</li>
+            <li>Countries</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="">
+          <p class="font-medium text-lg mb-7 text-end md:text-start">Product</p>
+          <ul class="flex flex-col gap-1.5 text-greydark leading-8 text-end md:text-start">
+            <li>Coffe Shop ?</li>
+            <li>FAQ</li>
+            <li>About Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+      </div>
+      <!-- [END] SIDE FOOTER -->
+    </div>
+    <!-- COPYRIGHT -->
+    <p class="text-center md:text-left my-4 text-[#AFB5C0] w-4/5 max-width">©2020CoffeeStore</p>
+  </footer>
+  
+</body>
+</html>
