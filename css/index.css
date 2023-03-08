@@ -19,6 +19,9 @@
     .max-width {
         @apply max-w-[1440px];
     }
+    .input-auth {
+        @apply h-[75px] border border-black rounded-2xl px-6;
+    }
     .navlink {
         @apply text-greydark
     }
@@ -56,10 +59,15 @@
         transform: scaleX(100%);
     }
     
-    .hero {
-        background-image: url(../img/banner-home.jpeg.webp);
+    .hero, .hero-auth {
         background-size: cover;
         background-position: center;
+    }
+    .hero {
+        background-image: url(../img/banner-home.jpeg.webp);
+    }
+    .hero-auth {
+        background-image: url(../img/banner.jpeg.webp);
     }
     .input-line[type=text]:focus {
         @apply border-none;

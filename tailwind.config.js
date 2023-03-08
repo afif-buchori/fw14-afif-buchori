@@ -2,6 +2,9 @@
 module.exports = {
   content: [
     './deploy/index.html',
+    './deploy/authentication/login.html',
+    './deploy/authentication/signup.html',
+    './deploy/products/index.html',
   ],
   theme: {
     extend: {
