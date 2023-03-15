@@ -20,7 +20,7 @@
         @apply max-w-[1440px];
     }
     .input-auth {
-        @apply h-[75px] border border-black rounded-2xl px-6;
+        @apply h-14 md:h-[75px] border border-black rounded-2xl px-3 md:px-6;
     }
     .navlink {
         @apply text-greydark
@@ -40,6 +40,9 @@
     }
     .nav-active {
         @apply text-secondary font-bold;
+    }
+    .nav-menu a {
+        @apply text-sm text-greydark;
     }
 
     .btn {
